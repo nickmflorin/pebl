@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.otf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateStatusView" customModule="Pebl2" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="u1o-YW-zcx" id="93J-oA-tCb"/>
+                <outlet property="createStatusViewSlider" destination="D5k-gZ-0gu" id="Xgj-uO-bM4"/>
+                <outlet property="eventSearchField" destination="YDN-oV-sW5" id="Wws-RY-LD9"/>
+                <outlet property="proceedButton" destination="CKG-M7-lmv" id="vda-R4-lbe"/>
+                <outlet property="sliderHeader" destination="mfG-W4-0au" id="IXd-Wi-xcf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="HQr-Ao-fSn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-cX-OGO">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="15"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.70196078429999997" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="aZ0-p7-8hA">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="WnN-MS-zs1"/>
+                        <constraint firstAttribute="width" constant="18" id="fpY-NS-t7e"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-oV-sW5" customClass="EventSearchField" customModule="Pebl2" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Dd6-z0-3EC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXI-yj-H1y">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="25l-A3-0dY"/>
+                        <constraint firstAttribute="width" constant="35" id="kz9-rs-McR"/>
+                    </constraints>
+                    <state key="normal" image="GridIcon"/>
+                    <connections>
+                        <action selector="categoryButtonClicked:" destination="-1" eventType="touchUpInside" id="3Pz-bQ-ruM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a favorite, find something new or create your own" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-ne-Th4">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5k-gZ-0gu" customClass="CreateStatusViewSlider" customModule="Pebl2" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FLR-fI-dMV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLb-CM-Lga">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3nA-rA-Yup"/>
+                        <constraint firstAttribute="width" constant="25" id="Xiv-XS-78K"/>
+                    </constraints>
+                    <state key="normal" image="SearchIcon"/>
+                    <connections>
+                        <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="SSg-Gv-piJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slider Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfG-W4-0au">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.70196078429999997" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKG-M7-lmv">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.26274509800000001" green="0.70196078429999997" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="proceedButtonClicked:" destination="-1" eventType="touchUpInside" id="qSf-E9-tHa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1o-YW-zcx">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.26274509800000001" green="0.70196078429999997" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked:" destination="-1" eventType="touchUpInside" id="aIP-cz-Ir0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SLb-CM-Lga" secondAttribute="trailing" constant="18" id="6ZD-8u-uCp"/>
+                <constraint firstItem="aZ0-p7-8hA" firstAttribute="leading" secondItem="wuS-cX-OGO" secondAttribute="trailing" constant="4" id="8e9-5c-aTA"/>
+                <constraint firstItem="SLb-CM-Lga" firstAttribute="leading" secondItem="vXI-yj-H1y" secondAttribute="trailing" constant="8" id="Bka-Wc-ydY"/>
+                <constraint firstItem="wuS-cX-OGO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="EXB-WU-amU"/>
+                <constraint firstItem="CKG-M7-lmv" firstAttribute="centerY" secondItem="u1o-YW-zcx" secondAttribute="centerY" id="GFE-rB-hLU"/>
+                <constraint firstItem="D5k-gZ-0gu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GQk-Cm-reJ"/>
+                <constraint firstItem="YDN-oV-sW5" firstAttribute="top" secondItem="ER8-ne-Th4" secondAttribute="bottom" constant="15" id="Iky-EZ-6dq"/>
+                <constraint firstAttribute="trailing" secondItem="D5k-gZ-0gu" secondAttribute="trailing" id="MGE-0U-SPK"/>
+                <constraint firstItem="ER8-ne-Th4" firstAttribute="leading" secondItem="wuS-cX-OGO" secondAttribute="leading" id="Qwr-Xg-JfK"/>
+                <constraint firstItem="SLb-CM-Lga" firstAttribute="centerY" secondItem="vXI-yj-H1y" secondAttribute="centerY" id="Uxx-Y7-z0j"/>
+                <constraint firstAttribute="trailing" secondItem="CKG-M7-lmv" secondAttribute="trailing" constant="25" id="VbY-b0-8Fl"/>
+                <constraint firstItem="ER8-ne-Th4" firstAttribute="top" secondItem="wuS-cX-OGO" secondAttribute="bottom" constant="3" id="Zgb-gZ-fAa"/>
+                <constraint firstItem="vXI-yj-H1y" firstAttribute="leading" secondItem="YDN-oV-sW5" secondAttribute="trailing" constant="8" id="cFs-tQ-Fg1"/>
+                <constraint firstItem="D5k-gZ-0gu" firstAttribute="top" secondItem="mfG-W4-0au" secondAttribute="bottom" constant="8" id="cjO-4w-WN4"/>
+                <constraint firstItem="vXI-yj-H1y" firstAttribute="centerY" secondItem="YDN-oV-sW5" secondAttribute="centerY" id="heX-Af-0J0"/>
+                <constraint firstItem="mfG-W4-0au" firstAttribute="top" secondItem="YDN-oV-sW5" secondAttribute="bottom" constant="25" id="jEG-e0-WLq"/>
+                <constraint firstItem="u1o-YW-zcx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="jaw-1q-49y"/>
+                <constraint firstItem="wuS-cX-OGO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lCv-tp-89n"/>
+                <constraint firstItem="aZ0-p7-8hA" firstAttribute="centerY" secondItem="wuS-cX-OGO" secondAttribute="centerY" id="qFN-QY-pDV"/>
+                <constraint firstItem="u1o-YW-zcx" firstAttribute="top" secondItem="D5k-gZ-0gu" secondAttribute="bottom" constant="15" id="qUn-ZH-31s"/>
+                <constraint firstItem="mfG-W4-0au" firstAttribute="leading" secondItem="wuS-cX-OGO" secondAttribute="leading" id="uiW-KR-b5R"/>
+                <constraint firstItem="YDN-oV-sW5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="yk1-TG-mgR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="222.5" y="-205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GridIcon" width="225" height="225"/>
+        <image name="InfoIcon" width="416" height="416"/>
+        <image name="SearchIcon" width="292" height="305"/>
+    </resources>
+</document>

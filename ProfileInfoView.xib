@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileInfoView" customModule="Pebl2" customModuleProvider="target">
+            <connections>
+                <outlet property="careerField" destination="JCO-ln-dT1" id="Ict-z1-Erc"/>
+                <outlet property="distanceField" destination="2pK-UD-DIm" id="qTv-MD-Jpa"/>
+                <outlet property="dottedLines1" destination="Dtv-cx-ywM" id="W9V-cX-7QL"/>
+                <outlet property="dottedLines2" destination="PG6-gH-V7N" id="uwS-p4-fZO"/>
+                <outlet property="educationField" destination="V6G-gS-PRP" id="Fyr-9Y-VJB"/>
+                <outlet property="firstNameField" destination="GAa-Xa-F0z" id="QNz-Ao-WmU"/>
+                <outlet property="hobbiesField" destination="w9J-rT-IGW" id="YQc-7D-c0P"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Y2T-Nd-hIY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAa-Xa-F0z">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="fMl-nZ-KcF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pK-UD-DIm">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="qcf-J4-QGz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DistanceIconWhite2" translatesAutoresizingMaskIntoConstraints="NO" id="jdD-pS-j8J">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="eVw-e4-aqc"/>
+                        <constraint firstAttribute="width" secondItem="jdD-pS-j8J" secondAttribute="height" multiplier="1:1" constant="1" id="zKE-32-I0h"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EducationIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="l5f-Bi-td7">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="l5f-Bi-td7" secondAttribute="height" multiplier="1:1" id="4cU-6m-2Hj"/>
+                        <constraint firstAttribute="height" constant="22" id="ebD-P0-q3t"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Career Field" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCO-ln-dT1">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-gS-PRP">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies Field" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9J-rT-IGW">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HobbiesIconWhite" translatesAutoresizingMaskIntoConstraints="NO" id="2mm-4K-HEq">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="OgE-qf-fce"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dtv-cx-ywM" customClass="DottedLines" customModule="Pebl2" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="QNe-Ut-dbz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PG6-gH-V7N" customClass="DottedLines" customModule="Pebl2" customModuleProvider="target">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="Y3g-9e-Fwc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2mm-4K-HEq" firstAttribute="width" secondItem="2mm-4K-HEq" secondAttribute="height" multiplier="1:1" id="0Dv-C7-kCI"/>
+                <constraint firstItem="jdD-pS-j8J" firstAttribute="top" secondItem="GAa-Xa-F0z" secondAttribute="bottom" constant="8" id="3Fm-tY-97V"/>
+                <constraint firstItem="w9J-rT-IGW" firstAttribute="top" secondItem="2mm-4K-HEq" secondAttribute="top" id="4w2-hE-MPF"/>
+                <constraint firstItem="2mm-4K-HEq" firstAttribute="top" secondItem="PG6-gH-V7N" secondAttribute="bottom" constant="1" id="9aB-WW-krh"/>
+                <constraint firstItem="PG6-gH-V7N" firstAttribute="centerX" secondItem="Dtv-cx-ywM" secondAttribute="centerX" id="AB2-Gp-YwW"/>
+                <constraint firstItem="2pK-UD-DIm" firstAttribute="leading" secondItem="jdD-pS-j8J" secondAttribute="trailing" constant="15" id="BFw-0f-fVQ"/>
+                <constraint firstItem="JCO-ln-dT1" firstAttribute="leading" secondItem="2pK-UD-DIm" secondAttribute="leading" id="FhZ-rN-mA0"/>
+                <constraint firstItem="l5f-Bi-td7" firstAttribute="centerX" secondItem="jdD-pS-j8J" secondAttribute="centerX" id="Fo3-8P-QS1"/>
+                <constraint firstItem="V6G-gS-PRP" firstAttribute="trailing" secondItem="JCO-ln-dT1" secondAttribute="trailing" id="IsV-A1-YWl"/>
+                <constraint firstItem="w9J-rT-IGW" firstAttribute="leading" secondItem="V6G-gS-PRP" secondAttribute="leading" id="Kc0-hJ-8EN"/>
+                <constraint firstItem="GAa-Xa-F0z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Kud-ma-bGM"/>
+                <constraint firstItem="w9J-rT-IGW" firstAttribute="trailing" secondItem="V6G-gS-PRP" secondAttribute="trailing" id="Tc8-W4-TPf"/>
+                <constraint firstItem="JCO-ln-dT1" firstAttribute="top" secondItem="2pK-UD-DIm" secondAttribute="bottom" constant="30" id="UoC-eo-hCW"/>
+                <constraint firstItem="2mm-4K-HEq" firstAttribute="centerX" secondItem="l5f-Bi-td7" secondAttribute="centerX" id="Wy8-9J-xsV"/>
+                <constraint firstItem="V6G-gS-PRP" firstAttribute="top" secondItem="JCO-ln-dT1" secondAttribute="bottom" constant="5" id="Xfs-e3-KIQ"/>
+                <constraint firstItem="GAa-Xa-F0z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ZRq-3q-tDd"/>
+                <constraint firstItem="Dtv-cx-ywM" firstAttribute="centerX" secondItem="jdD-pS-j8J" secondAttribute="centerX" id="bje-XQ-Nkh"/>
+                <constraint firstItem="w9J-rT-IGW" firstAttribute="top" secondItem="V6G-gS-PRP" secondAttribute="bottom" constant="25" id="eJh-es-4r8"/>
+                <constraint firstItem="Dtv-cx-ywM" firstAttribute="top" secondItem="jdD-pS-j8J" secondAttribute="bottom" constant="1" id="fFe-8B-hDZ"/>
+                <constraint firstItem="jdD-pS-j8J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="g65-qi-81e"/>
+                <constraint firstAttribute="trailing" secondItem="JCO-ln-dT1" secondAttribute="trailing" constant="10" id="hkF-6g-5jZ"/>
+                <constraint firstItem="l5f-Bi-td7" firstAttribute="top" secondItem="Dtv-cx-ywM" secondAttribute="bottom" constant="1" id="izP-cV-6l8"/>
+                <constraint firstItem="V6G-gS-PRP" firstAttribute="leading" secondItem="JCO-ln-dT1" secondAttribute="leading" id="ngS-7P-rcO"/>
+                <constraint firstItem="JCO-ln-dT1" firstAttribute="top" secondItem="l5f-Bi-td7" secondAttribute="top" id="o2I-Yd-tib"/>
+                <constraint firstItem="PG6-gH-V7N" firstAttribute="top" secondItem="l5f-Bi-td7" secondAttribute="bottom" constant="1" id="pe2-Ih-f3p"/>
+                <constraint firstItem="2pK-UD-DIm" firstAttribute="centerY" secondItem="jdD-pS-j8J" secondAttribute="centerY" id="tB4-MT-Loa"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DistanceIconWhite2" width="27" height="45"/>
+        <image name="EducationIconWhite" width="624" height="362"/>
+        <image name="HobbiesIconWhite" width="204" height="184"/>
+    </resources>
+</document>

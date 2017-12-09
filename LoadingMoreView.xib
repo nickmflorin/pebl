@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.otf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingMoreView" customModule="Pebl2">
+            <connections>
+                <outlet property="label" destination="n0J-nN-Y1j" id="UDT-H6-B6Y"/>
+                <outlet property="spinner" destination="1yc-F8-cDb" id="Ih0-xu-Jsy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Tc8-fn-cgC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nU-YC-OPf">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9CS-dQ-q3i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-F8-cDb"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading more events..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-nN-Y1j">
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n0J-nN-Y1j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.5" id="DDL-X9-cMz"/>
+                <constraint firstItem="1yc-F8-cDb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ExH-hy-j2y"/>
+                <constraint firstItem="3nU-YC-OPf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LLJ-Hi-u8F"/>
+                <constraint firstItem="3nU-YC-OPf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ryr-d0-8L0"/>
+                <constraint firstItem="1yc-F8-cDb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="1.3" id="d1l-fh-MHD"/>
+                <constraint firstAttribute="trailing" secondItem="3nU-YC-OPf" secondAttribute="trailing" constant="2" id="muQ-oz-LUD"/>
+                <constraint firstItem="n0J-nN-Y1j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tDp-Sb-kp1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-11" y="360.5"/>
+        </view>
+    </objects>
+</document>
